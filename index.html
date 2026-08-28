@@ -4,10 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea House</title>
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Tailwind and DaisyUi -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<!-- Font -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+  <!-- Awsome -->
+   <script src="https://kit.fontawesome.com/bdfaf4bd54.js" crossorigin="anonymous"></script>
+
+   <!-- Color -->
+      <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .font-manrope {
+      font-family: "Manrope", sans-serif;
+    }
+  </style>
 
 </head>
-<body>
+<body class="font-manrope">
+    <header>
+        <div class="hero">
+            <div class="hero-content flex-col lg:flex-row">
+                <div>
+                    <h1>
+                       A Cup of Happiness <br>
+                       Sip. Relax. Enjoy.<br>
+                       Tea That Warms Your Soul 
+                    </h1>
+                    <p class="">আপনার স্বাদের জন্য সেরা চা ও বোটানিক্যাল পণ্য
+    সরবরাহ করাই আমাদের লক্ষ্য</p>
+    <button class="btn bg-gradient-to-r from-[#FF8938] to-[#F00] text-white">Explore More</button>
+                </div>
+            </div>
+        </div>
+        <div>
+          <img src="images/banner.png" class="max-w-sm" />
+          <!-- rating badge -->
+          <div class="-mt-14 flex items-center gap-4 drop-shadow-lg bg-white p-5 w-60">
+            <i class="fa-solid fa-star text-amber-400"></i>
+            <div>
+              <h3 class="text-3xl">5.00</h3>
+              <p>
+                Trust Pilot Ratings
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </header>
     
 </body>
 </html>
